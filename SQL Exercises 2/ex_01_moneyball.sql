@@ -1,3 +1,23 @@
+-- The year is 2001. You’ve been hired to help make the most of the Oakland Athletics baseball team’s dwindling player budget.
+-- Each year, teams like the “A’s” hire new baseball players. Unfortunately, you’re low on star players—and on funds.
+-- Though, with a bit of SQL and some luck, who says you can’t still create a team that defies expectations?
+
+-- Given a database called moneyball.db — one that contains information on players, their performances, and their salaries—help the Oakland Athletics find the value in players others might miss.
+
+-- The performances tables contains the following columns:
+-- id, which is the ID of the performance
+-- player_id, which is the ID of the player who generated the performance
+-- team_id, which is the ID of the team for which the player generated the performance
+-- year, which is the year in which the player generated the performance
+-- G, which is the number of games played by the player, for the given team, in the given year
+-- AB, which is the player’s number of “at bats” (i.e., times they went up to bat), for the given team, in the given year
+-- H, which is the player’s number of hits, for the given team, in the given year
+-- 2B, which is the player’s number of doubles (two-base hits), for the given team, in the given year
+-- 3B, which is the player’s number of triples (three-base hits), for the given team, in the given year
+-- HR, which is the player’s number of home runs, for the given team, in the given year
+-- RBI, which is the player’s number of “runs batted in” (i.e., runs scored), for the given team, in the given year
+-- SB, which is the player’s number of stolen bases, for the given team, in the given year
+
 -- 1.)
 -- You should start by getting a sense for how average player salaries have changed over time. Write a SQL query to find the average player salary by year.
 --    Sort by year in descending order.

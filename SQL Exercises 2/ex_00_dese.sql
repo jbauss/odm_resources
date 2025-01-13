@@ -1,3 +1,8 @@
+-- You just landed a new job as a data analyst for the State of Massachusetts, working within the Department of Elementary and Secondary Education (or DESE, for short!).
+-- DESE oversees the state’s public education system. One responsibility of DESE is to ensure every child has a quality education—one in which they encounter experienced teachers, have access to an abundance of resources, and ultimately graduate having met all requirements of the state.
+-- Your SQL skills have a part to play in these lofty goals!
+
+-- In a database called dese.db, answer questions about the state of education in Massachusetts.
 
 -- 1.)
 -- Your colleague is preparing a map of all public schools in Massachusetts (MA). Write a SQL query to find the names and cities of all public schools in Massachusetts.
