@@ -60,7 +60,7 @@ SELECT id, title, production_code, air_date FROM episodes ORDER BY production_co
 
 -- 12. List the titles of episodes from season 5, in reverse alphabetical order.
 
-SELECT title FROM episodes ORDER BY title DESC;
+SELECT title FROM episodes WHERE season=5 ORDER BY title DESC;
 
 -- 13. Count the number of unique episode titles.
 
