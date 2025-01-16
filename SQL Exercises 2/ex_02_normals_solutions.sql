@@ -3,14 +3,10 @@
 
 SELECT "0m" FROM normals WHERE latitude=42.5 AND longitude=-69.5;
 
--- Answer: 8.703
-
 -- 2. Write a SQL query to find the normal temperature of the deepest sensor near the Gulf of Maine, at the same coordinate above.
     -- The deepest sensor records temperatures at 225 meters of depth, so you can find this data in the 225m column.
 
 SELECT "225m" FROM normals WHERE latitude=42.5 AND longitude=-69.5;
-
--- Answer: 7.453
 
 -- 3. Choose a location of your own and write a SQL query to find the normal temperature at 0 meters, 100 meters, and 200 meters. You might find this website helpful if you’d like to find some coordinates to use! https://www.maps.ie/coordinates.html
 
@@ -20,13 +16,9 @@ SELECT "0m", "100m", "200m" FROM normals WHERE latitude=54.5 AND longitude=6.5;
 
 SELECT MIN("0m") FROM normals;
 
--- Answer: -1.837
-
 -- 5. Write a SQL query to find the highest normal ocean surface temperature.
 
 SELECT MAX("0m") FROM normals;
-
--- Answer: 30.559
 
 -- 6. Write a SQL query to return all normal ocean temperatures at 50m of depth, as well as their respective degrees of latitude and longitude, within the Arabian Sea.
     -- Include latitude, longitude, and temperature columns.
@@ -42,8 +34,6 @@ SELECT "50m", "latitude", "longitude" FROM normals WHERE latitude BETWEEN 0 AND 
     -- The equator’s ocean surface temperatures can be found at all longitudes between the latitudes -0.5° and 0.5°, inclusive.
 
 SELECT ROUND(AVG("0m"), 2) AS "Average Equator Ocean Surface Temperature" FROM normals WHERE latitude BETWEEN -0.5 AND 0.5;
-
--- Answer: 27.62
 
 -- 8. Write a SQL query to find the 10 locations with the lowest normal ocean surface temperature, sorted coldest to warmest.
     -- If two locations have the same normal ocean surface temperature, sort by latitude, smallest to largest.
